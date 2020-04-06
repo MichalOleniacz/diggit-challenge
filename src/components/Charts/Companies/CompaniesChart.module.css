@@ -1,0 +1,8 @@
+.canvas {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  background-color: #0b0e19;
+}
