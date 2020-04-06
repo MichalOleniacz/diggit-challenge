@@ -305,7 +305,7 @@ export const fakeData = () => {
     "Jansink",
   ];
   const individuals = [];
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 284; i++) {
     let firstName =
       names[Math.ceil(Math.random() * names.length) - 1];
     let surname =

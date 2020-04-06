@@ -6,8 +6,8 @@ export const getCurrentDate = () => {
   year = year.toString();
   month = month.toString();
   day = day.toString();
-  if (day.length == 1) day = "0" + day;
-  if (month.length == 1) month = "0" + month;
+  if (day.length === 1) day = "0" + day;
+  if (month.length === 1) month = "0" + month;
   return { year, month, day };
 };
 
@@ -20,7 +20,7 @@ export const getDate = (input) => {
   year = year.toString();
   month = month.toString();
   day = day.toString();
-  if (day.length == 1) day = "0" + day;
-  if (month.length == 1) month = "0" + month;
+  if (day.length === 1) day = "0" + day;
+  if (month.length === 1) month = "0" + month;
   return { year, month, day };
 };

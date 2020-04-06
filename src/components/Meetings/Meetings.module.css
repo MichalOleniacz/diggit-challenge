@@ -63,7 +63,7 @@
 .name {
   transform: translateX(25px);
   padding-left: 10px;
-  border-left: solid 5px black;
+  border-left: solid 7px black;
 }
 
 .innerWrapper {

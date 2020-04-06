@@ -4,8 +4,6 @@ import Dropdown from "../DropdownMenu/Header/Dropdown";
 
 class Header extends Component {
   render() {
-    console.log(this.props.dropdownData);
-
     const {
       dropdownData,
       displayed,

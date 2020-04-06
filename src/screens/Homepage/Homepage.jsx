@@ -109,9 +109,9 @@ class Homepage extends Component {
     },
 
     header_select: [
-      { id: 1, name: "dd-option-1" },
-      { id: 2, name: "dd-option-2" },
-      { id: 3, name: "dd-option-3" },
+      { id: 1, name: "option-1" },
+      { id: 2, name: "option-2" },
+      { id: 3, name: "option-3" },
     ],
 
     // Displayed value of ddBtn in Header
@@ -179,7 +179,7 @@ class Homepage extends Component {
 
     if (displayedGender && displayedType && anti_loop) {
       this.setState({ anti_loop: false });
-      if (displayedType == "Companies") {
+      if (displayedType === "Companies") {
         let filtered = companies.filter(
           (c) =>
             c.gender.toUpperCase() ===
@@ -188,7 +188,7 @@ class Homepage extends Component {
         let output = filtered.length;
 
         this.setState({ sort_displayed_value: output });
-      } else if (displayedType == "Individuals") {
+      } else if (displayedType === "Individuals") {
         let filtered = individuals.filter(
           (c) =>
             c.gender.toUpperCase() ===

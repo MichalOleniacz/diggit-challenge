@@ -16,7 +16,7 @@ class VerticalPagination extends Component {
                   ? styles.active
                   : null
               }>
-              <img src={icon.url} />
+              <img src={icon.url} alt={"icon"} />
 
               <br />
             </div>

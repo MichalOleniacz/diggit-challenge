@@ -4,17 +4,16 @@ import styles from "./HorizontalPagination.module.css";
 class HorizontalPagination extends Component {
   render() {
     let { pages, currentPage, onPageChange } = this.props;
-    console.log(`currentPage-HPag-${currentPage}`);
 
     return (
       <div className={styles.wrapper}>
-        {pages.map(page => {
+        {pages.map((page) => {
           return (
             <h3
               key={page.id}
               onClick={() => onPageChange(page.id)}
               className={
-                currentPage == page.id
+                currentPage === page.id
                   ? styles.active
                   : null
               }>

@@ -14,7 +14,6 @@ class DropdownGender extends Component {
   render() {
     const { dropdownData, displayed } = this.props;
 
-    console.log(dropdownData);
     return (
       <div className={styles.dropdown}>
         <button className={styles.dropdownBtn}>

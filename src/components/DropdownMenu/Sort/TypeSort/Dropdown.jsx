@@ -8,13 +8,11 @@ class DropdownType extends Component {
     let el = { ...element };
     let elName = el.name;
     let elId = el.id;
-    // console.log(elName, elId);
     this.props.onClickType(elName, elId);
   };
   render() {
     const { dropdownData, displayed } = this.props;
 
-    console.log(dropdownData);
     return (
       <div className={styles.dropdown}>
         <button className={styles.dropdownBtn}>

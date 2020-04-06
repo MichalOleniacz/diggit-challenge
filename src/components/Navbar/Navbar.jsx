@@ -31,7 +31,11 @@ class Navbar extends Component {
     return (
       <nav>
         <div className={styles.logoWrapper}>
-          <img src={Logo} className={styles.mainLogo} />
+          <img
+            src={Logo}
+            className={styles.mainLogo}
+            alt={"logo"}
+          />
         </div>
         <div className={styles.linksWrapper}>
           <div className={styles.links}>
@@ -43,6 +47,7 @@ class Navbar extends Component {
             <img
               src={Avatar}
               className={styles.profileImg}
+              alt={"avatar"}
             />
             <h1 className={styles.name}>
               {this.props.user}

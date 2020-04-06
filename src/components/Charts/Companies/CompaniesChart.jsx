@@ -6,7 +6,6 @@ class IndividualsChart extends Component {
   chartRef = React.createRef();
 
   componentDidMount() {
-    console.log("test");
     const ctx = this.chartRef.current.getContext("2d");
 
     const { labels, label, data } = this.props;
@@ -24,7 +23,7 @@ class IndividualsChart extends Component {
       return gradient;
     };
 
-    let second = new Chart(ctx, {
+    new Chart(ctx, {
       type: "line",
       data: {
         labels,

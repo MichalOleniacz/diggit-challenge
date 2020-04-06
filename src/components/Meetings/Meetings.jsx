@@ -17,7 +17,6 @@ class Meetings extends Component {
     );
 
     const shownData = sortedData.slice(0, 3);
-    console.log(shownData);
     return shownData;
   };
 
@@ -37,9 +36,11 @@ class Meetings extends Component {
           </div>
         </div>
         <div className={styles.table}>
-          {shownData.map((element) => {
+          {shownData.map((element, index) => {
             return (
-              <div className={styles.TablesAreWeird}>
+              <div
+                className={styles.TablesAreWeird}
+                key={index}>
                 <div className={styles.innerWrapper}>
                   <p
                     className={styles.name}

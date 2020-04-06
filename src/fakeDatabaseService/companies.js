@@ -355,7 +355,7 @@ export const fakeCompanies = () => {
   ];
 
   const companies = [];
-  for (let i = 0; i < 150; i++) {
+  for (let i = 0; i < 364; i++) {
     let companyName =
       companyNames[
         Math.ceil(Math.random() * companyNames.length) - 1
@@ -380,6 +380,5 @@ export const fakeCompanies = () => {
       meetingDate: meetingDate,
     });
   }
-  console.log(companies);
   return companies;
 };
